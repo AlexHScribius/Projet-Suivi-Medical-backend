@@ -1,0 +1,42 @@
+Système de suivi médical :
+
+acteurs :
+-médecin
+-patient
+-administration
+-visiteur
+
+Gestion des dossiers patients :
+- médecin : consulte la liste des dossiers
+- médecin : consulte un dossier
+- médecin : modifie le contenu médical d'un dossier
+- médecin : consulte l'historique des modifications du dossier
+- patient : consulte son dossier
+- patient : demande à l'administration de modifier une information erronée relative (non-médical)
+- administration : consulte la liste des dossiers
+- administration : consulte un dossier (sauf informations médicales)
+- administration : modifie un dossier (sauf informations médicales) (avec notification au patient)
+- administration : accepte ou refuse les modifications demandées par un patient (avec notification)
+
+Gestion des médecins :
+- administration : consulte la liste des médecins
+- administration : consulte les informations d'un médecin
+- administration : modifie les informations du médecin (avec notification au médecin)
+- administration : accepte ou refuse les modifications demandées par un médecin (avec notification)
+- médecin : consulte ses informations
+- médecin : demande à l'admninistration une modification d'une information erronnée
+
+Gestion des consultations :
+- médecin : consulte les disponibilités
+- médecin : consulte ses disponibilités
+- médecin : modifie ses disponibilités sur les créneaux encore libres
+- médecin : annule un rendez-vous
+- patient : consulte les disponibilités
+- patient : prend un rendez-vous
+- patient : paie un rendez-vous
+- visiteur : consulte les disponibilités
+- administration : consulte la liste des consultations (effectuées, annulées, à venir, facturées, payées)
+- administration : envoie une facture à un patient
+
+Gestion administrative :
+- administration : paie un médecin
